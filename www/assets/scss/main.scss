@@ -1,0 +1,133 @@
+/*Admin style*/
+
+
+/*Déclaration des couleurs*/
+$sidebar-bg : #FAFAFA;
+
+.side
+{
+	background-color: $sidebar-bg;
+}
+
+h3.subheader 
+{
+	font-size: 1.25rem;
+}
+
+body
+{
+	background-image: url('../images/renard-transparent.png');
+	//background-position: right top;
+	background-position: left top;
+	//background-size: 60%;
+	//background-repeat: no-repeat;
+}
+
+/* Dashboard
+ * --------------------------------------- */
+#user
+{
+	display: inline-block;
+	float: right;
+	padding: 5px 10px;
+	color:white;
+
+	span 
+	{	
+		color: #008cba;
+	}
+
+}
+
+.totalInfo
+{
+	span 
+	{
+		position: absolute;
+		top: 113px;
+		right: 165px;
+		font-size: 76px;
+		color: white;
+
+		&#totalCom
+		{
+			right: 148px;		
+		}
+
+		&#ecoActorEmail
+		{
+			font-size: 18px;
+			right: 113px;
+		}
+
+	}
+
+}
+
+.supporticons
+{
+	p 
+	{
+		padding-top: 10px;
+
+		&#eco 
+		{
+			padding-left: 80px;
+		}
+
+		&#com 
+		{
+			padding-left: 40px;
+		}
+
+		&#mel
+		{
+			padding-left: 50px;
+		}
+		
+		
+	}
+	
+}
+
+/* Button
+ * --------------------------------------- */
+.green
+{
+	background-color: green !important; 
+}
+
+.grey
+{
+	background-color: #8c8b8b !important; 
+}
+
+
+
+/* Form Errors
+ * --------------------------------------- */
+.formErrors
+{
+	background-color: #f04124;
+
+	ul
+	{
+		margin-top: 1.1rem;
+		list-style: none;
+
+		li
+		{
+			color : #FFFFFF;
+			font-style:  italic;
+		}
+	}
+}
+
+
+/* BreadCrumbs
+ * --------------------------------------- */
+.breadcrumbs
+{
+	border: none;
+	margin-right: 0;
+}

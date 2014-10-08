@@ -1,0 +1,8 @@
+/* Google Map
+ * --------------------------------------- */
+#wrap-map,
+#map-canvas {
+  display: block;
+  width: 100%;
+  height: 700px;
+  border: 10px solid #f0f0f0; }

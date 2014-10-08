@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<!--[if IE]><![endif]-->
+
+<!--[if lt IE 7]><html xmlns="http://www.w3.org/1999/xhtml" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" class="no-js lt-ie9"><![endif]-->
+
+<!--[if gt IE 8]><!--> 
+
+<html class="no-js" lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!--<![endif]-->
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+	<title>Go Mobility | Eco application</title>
+
+	<meta name="author" content="Go Mobility" />
+	<meta name="description" content="La super description" />
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/>
+
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+	<link rel="stylesheet" href="bower_components/jquery-mobile-bower/css/jquery.mobile-1.4.2.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/font-awesome-4.2.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!--[if IE]>
+      <script type="text/javascript">
+         var console = { log: function() {} };
+      </script>
+      <![endif]-->
+      
+    <!--[if IE]
+      <script>
+        document creatElement("header");
+        document creatElement("footer");
+        document creatElement("nav");
+        document creatElement("article");
+        document creatElement("section");
+      </script>
+      <![if IE]-->
+      
+      <!-- Include Javascript -->
+      <script src="bower_components/jquery/jquery.min.js"></script>
+      <script src="bower_components/jquery-mobile-bower/js/jquery.mobile-1.4.2.js"></script>
+      <script src="http://maps.google.com/maps/api/js?sensor=false&language=fr"></script>
+      <script src="js/jquery.cookie.js"></script>
+      <script src="js/app.js"></script>
+
+  </head>
+
+  <body>
+
+  	<!-- landing page -->
+  	<div data-role="page" id="portail">
+  		<header class="header" data-role="header">
+  			<div class="inner">
+  				<img src="medias/img/logo.png">
+  				<h1>Go Mobility</h1>
+  			</div>
+  		</header>
+
+  		<main class="ui-content">
+  			<div id="connect-box">
+  				<a href="#course" class="ui-corner-all fb" data-transition="pop">
+  					<i class="ico-fb fa fa-facebook"></i>
+  					<span class="ui-btn-text">Se connecter avec Facebook</span>
+  				</a>
+  				<a href="#course" class="ui-corner-all mail" data-transition="pop">
+  					<i class="ico-mail"></i>
+  					<span class="ui-btn-text">Se connecter avec email</span>
+  				</a>
+  			</div>
+  		</main>
+  	</div>
+  	<!-- /#landing page -->
+
+  	<!-- course -->
+  	<div data-role="page" id="course">
+  		
+
+  		<header class="header" data-role="header">
+  			<a href="#config"><i class="fa fa-bars"></i></a>
+  			<div class="inner">
+  				<img src="medias/img/logo.png">
+  				<h1>Go Mobility</h1>
+  			</div>
+  		</header>
+
+  		<main class="ui-content">
+  			<ul id="list-course" class="cf">
+  				<li class="left center"><a id="proposal" href="#prop" data-transition="pop"><img src="medias/img/course1.png"><h2><em>Je propose</em> mon parcours</h2></a></li>
+  				<li class="right center"><a id="choice" href="#tourist-wrapper" data-transition="pop"><img src="medias/img/course2.png"><h2><em>Je choisis</em> mon parcours</h2></a></li>
+  			</ul>
+  			<div id="co2">
+  				<p>Déjà</p>
+  				<div class="spinner center left">
+  					<span>012</span>
+  				</div>
+  				<p>CO2</p>
+  				<p>g</p>
+  				<p>économisés grace à vous !</p>
+  			</div>
+  		</main>
+  		<aside data-position="fixed" id="contest" class="center">
+  			<img src="medias/img/contest.png">
+  			<p>Participer à notre concours</p>
+  		</aside>
+  	</div>
+  	<!-- /#course -->
+
+    <!-- sport-effort -->
+    <div data-role="page" id="prop">
+
+
+      <header class="header" data-role="header">
+        <a href="#config"><i class="fa fa-bars"></i></a>
+        <div class="inner">
+          <h1>Proposition</h1>
+        </div>
+      </header>
+
+      <main class="ui-content center">
+        <div data-role="fieldcontain">
+          <fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain">
+            <legend>Votre proposition:</legend>
+            <p>Départ</p>
+            <input type="text" name="departure" value="Départ"/>
+
+            <p>Arrivée</p>
+            <input type="text" name="arrival" value="Arrivée"/>
+
+            <p>Laissez votre impression</p>
+            <textarea name="comment" row="10" placeholder="Laissez votre impression"></textarea>
+            
+          </fieldset>
+        </div>  
+      </main>
+
+      <footer data-role="footer" class="center">
+        <a id="share-course" href="#">Proposer mon expérience</a>
+      </footer>
+    </div>
+    <!-- /#sport-effort -->
+
+  	<!-- tourist page wrapper -->
+  	<div id="tourist-wrapper" data-role="page">
+  		
+  		<!-- validated -->
+  		<div id="validated">
+  			<header class="header" data-role="header">
+  				<div class="inner">
+  					<img src="medias/img/logo.png">
+  					<h1>Go Mobility</h1>
+  				</div>
+  			</header>
+
+  			<main class="ui-content center">
+  				<div class="tooltip">
+  					<p>Bon choix !!</p>
+  					<p>On y va !!</p>
+  				</div>
+  			</main>
+  		</div>
+  		<!-- /#validated -->
+
+  		<!-- tourist -->
+  		<div id="tourist" class="none">
+  			
+  			<div class="ui-panel-wrapper">
+  				<header class="header" data-role="header">
+  					<a href="#config"><i class="fa fa-bars"></i></a>
+  					<div class="inner">
+  						<h1>Parcours Touristique</h1>
+  					</div>
+  				</header>
+
+  				<main class="ui-content center">
+  					<section class="transports">
+  						<div data-role="fieldcontain">
+  							<fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain">
+  								<legend>Modes de transports:</legend>
+  								<input type="radio" checked name="radio-choice-1" id="radio-choice-1" value="WALKING" checked="checked" />
+  								<label for="radio-choice-1"><img src="medias/img/walking.png"></label>
+
+  								<input type="radio" name="radio-choice-1" id="radio-choice-2" value="CYCLING"/>
+  								<label for="radio-choice-2"><img src="medias/img/cycling.png"></label>
+
+  								<input type="radio" name="radio-choice-1" id="radio-choice-3" value="TRANSIT"/>
+  								<label for="radio-choice-3"><img src="medias/img/transit.png"></label>
+
+  								<input type="radio" name="radio-choice-1" id="radio-choice-4" value="ROLLER"/>
+  								<label for="radio-choice-4"><img src="medias/img/roller.png"></label>
+  							</fieldset>
+  						</div>
+  					</section>
+  					<section class="kind">
+  						<div data-role="fieldcontain">
+  							<fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain">
+  								<legend>Types de parcours:</legend>
+  								<input type="radio" checked name="radio-choice-2" id="radio-choice-1" value="économique" checked="checked" />
+  								<label for="radio-choice-1"><img src="medias/img/eco.png">Économique</label>
+
+  								<input type="radio" name="radio-choice-2" id="radio-choice-2" value="historique"/>
+  								<label for="radio-choice-2"><img src="medias/img/histo.png">Historique</label>
+
+  								<input type="radio" name="radio-choice-2" id="radio-choice-3" value="gastronomique"/>
+  								<label for="radio-choice-3"><img src="medias/img/gast.png">Gastronomique</label>
+
+  								<input type="radio" name="radio-choice-2" id="radio-choice-4" value="nature"/>
+  								<label for="radio-choice-4"><img src="medias/img/wild.png">Nature</label>
+  							</fieldset>
+  						</div>
+  					</section>
+  					<section class="details">
+  						<div data-role="fieldcontain">
+  							<fieldset data-role="fieldcontain">
+
+  								<legend>Durée du parcours (heures):</legend>
+  								<input type="range" name="slider-fill" id="slider-fill" value="5" min="1" max="10" data-highlight="true" />
+
+  								<legend>Distance du parcours (km):</legend>
+  								<input type="range" name="slider-fill" id="slider-fill" value="50" min="1" max="100" data-highlight="true" />
+  							</fieldset>
+  						</div>
+  					</section>
+  					<section class="annex">
+  						<div data-role="fieldcontain">
+  							<fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain" class="diff">
+  								<legend>Difficultés:</legend>
+  								<input type="radio" checked name="radio-choice-1" id="radio-choice-1" value="EASY" checked="checked" />
+  								<label for="radio-choice-1">Facile</label>
+
+  								<input type="radio" name="radio-choice-1" id="radio-choice-2" value="MEDIUM"/>
+  								<label for="radio-choice-2">Moyen</label>
+
+  								<input type="radio" name="radio-choice-1" id="radio-choice-3" value="HARD"/>
+  								<label for="radio-choice-3">Difficile</label>
+  							</fieldset>
+  							<fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain" class="money">
+  								<legend>Loisirs payants:</legend>
+  								<input type="radio" checked name="radio-choice-1" id="radio-choice-1" value="YES" checked="checked" />
+  								<label for="radio-choice-1">Oui</label>
+
+  								<input type="radio" name="radio-choice-1" id="radio-choice-2" value="NO"/>
+  								<label for="radio-choice-2">Non</label>
+  							</fieldset>
+
+  						</div>
+  					</section>
+
+  				</main>
+  				<footer data-role="footer" class="center">
+  					<a href="#tourist-exp" data-transition="pop" class="submit">GO</a>
+  				</footer>
+  			</div>
+  		</div>
+  		<!-- /#tourist -->
+
+  	</div>
+  	<!-- #/tourist-wrapper -->
+
+  	<!-- tourist-exp -->
+  	<div data-role="page" id="tourist-exp">
+
+  		<header class="header" data-role="header">
+  			<a href="#config"><i class="fa fa-bars"></i></a>
+  			<div class="inner">
+  				<h1>Parcours Sportif</h1>
+  			</div>
+  		</header>
+
+  		<main class="ui-content center">
+  			<img src="medias/img/map2.jpg" width="100%">
+  			<ul class="cf">
+  				<li>
+  					<div class="number"><span>1</span></div>
+  					<div class="co2"><span>10</span><p>kg co2</p></div>
+  					<div class="km"><span>50</span><p>km</p></div>
+  					<div class="min"><span>120</span><p>min</p></div>
+  					<div class="eval"><img src="medias/img/tourist-exp.png"><p>niveau: moyen</p></div>
+  				</li>
+  				<li>
+  					<div class="number"><span>1</span></div>
+  					<div class="co2"><span>10</span><p>kg co2</p></div>
+  					<div class="km"><span>50</span><p>km</p></div>
+  					<div class="min"><span>120</span><p>min</p></div>
+  					<div class="eval"><img src="medias/img/tourist-exp.png"><p>niveau: moyen</p></div>
+  				</li>
+  				<li>
+  					<div class="number"><span>1</span></div>
+  					<div class="co2"><span>10</span><p>kg co2</p></div>
+  					<div class="km"><span>50</span><p>km</p></div>
+  					<div class="min"><span>120</span><p>min</p></div>
+  					<div class="eval"><img src="medias/img/tourist-exp.png"><p>niveau: moyen</p></div>
+  				</li>
+  				<li>
+  					<div class="number"><span>1</span></div>
+  					<div class="co2"><span>10</span><p>kg co2</p></div>
+  					<div class="km"><span>50</span><p>km</p></div>
+  					<div class="min"><span>120</span><p>min</p></div>
+  					<div class="eval"><img src="medias/img/tourist-exp.png"><p>niveau: moyen</p></div>
+  				</li>
+  			</ul>	
+  		</main>
+  	</div>
+  	<!-- /#tourist-exp -->
+
+
+  	<!-- parcours sportif -->
+  	<div data-role="page" id="sport">
+
+
+  		<header class="header" data-role="header">
+  			<a href="#config"><i class="fa fa-bars"></i></a>
+  			<div class="inner">
+  				<h1>Parcours Sportifs</h1>
+  			</div>
+  		</header>
+
+  		<main class="ui-content center">
+  			<img src="medias/img/load.png">
+  			<div id="map-container">
+  				<div id="destinationForm">
+  					<div class="tabs" id="tabs1">
+  						<a href="#departure">Départ</a>
+  						<a href="#arrival">Destination</a>
+  					</div>
+  					<form data-role="fieldcontain" action="" method="get" name="direction" id="direction">
+  						<div id="departure">
+  							<input type="text" value="Lieux dit, rue, monuments..." name="origin" id="origin">
+  						</div>
+  						<div id="arrival">
+  							<input type="text" value="Lieux dit, rue, monuments..." name="destination" id="destination">
+  						</div>
+  					</form>
+  					<button data-role="button" type="submit" onclick="javascript:calculate()" class="calcRoute">Calculer l'itinéraire</button>
+  				</div>
+  				<div id="panel">
+  					<b>Mode de transport:</b>
+  					<select id="mode" onchange="calculate();">
+  						<option value="DRIVING">Voiture</option>
+  						<option value="WALKING">Marche</option>
+  						<option value="BICYCLING">Vélo</option>
+  						<option value="TRANSIT">Bus</option>
+  					</select>
+  				</div>
+  				<div id="map">
+  					<p>Veuillez patienter pendant le chargement de la carte...</p>
+  				</div>
+  			</div>
+  		</main>
+
+  		<footer data-role="footer">
+  			<nav>
+  				<ul>
+  					<li class="chill"><a href="#"><img src="medias/img/chill.png"></a></li>
+  					<li class="photo"><a href="#"><img src="medias/img/cam.png"></a></li>
+  					<li class="finished"><a href="#sport-effort" data-transition="flip">J'AI TERMINÉ !</a></li>
+  				</ul>
+  			</nav>
+  		</footer>
+  	</div>
+  	<!-- /#parcours sportif -->
+
+  	<!-- sport-effort -->
+  	<div data-role="page" id="sport-effort">
+
+
+  		<header class="header" data-role="header">
+  			<a href="#config"><i class="fa fa-bars"></i></a>
+  			<div class="inner">
+  				<h1>Parcours Sportif</h1>
+  			</div>
+  		</header>
+
+  		<main class="ui-content center">
+  			<img src="medias/img/map.jpg" width="100%">
+  			<h2 class="center">Bilan d'effort</h2>
+  			<ul class="effort cf">
+  				<li id="time"><img src="medias/img/time.png"><p><span>1</span>h <span>21</span>m <span>43</span>s</p></li>
+  				<li id="cal"><img src="medias/img/cal.png"><p><span>150</span>Kcal</p></li>
+  				<li id="km"><img src="medias/img/km.png"><p><span>15,7</span>km</p></li>
+  				<li id="co2-effort"><img src="medias/img/co2.png"><p><span>150</span>gCo2</p></li>
+  			</ul>
+  			<div data-role="fieldcontain">
+  				<fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain" class="diff">
+  					<legend>Difficultés:</legend>
+  					<input type="radio" checked name="radio-choice-1" id="radio-choice-1" value="EASY" checked="checked" />
+  					<label for="radio-choice-1">Facile</label>
+
+  					<input type="radio" name="radio-choice-1" id="radio-choice-2" value="MEDIUM"/>
+  					<label for="radio-choice-2">Moyen</label>
+
+  					<input type="radio" name="radio-choice-1" id="radio-choice-3" value="HARD"/>
+  					<label for="radio-choice-3">Difficile</label>
+  				</fieldset>
+  			</div>	
+  		</main>
+
+  		<footer data-role="footer" class="center">
+  			<a id="share-course" href="#">Partager mon parcours</a>
+  		</footer>
+  	</div>
+  	<!-- /#sport-effort -->
+
+  	<!-- #go-to-work -->
+  	<div data-role="page" id="go-to-work">
+
+
+  		<header class="header" data-role="header">
+  			<a href="#config"><i class="fa fa-bars"></i></a>
+  			<div class="inner">
+  				<h1>Parcours Sportifs</h1>
+  			</div>
+  		</header>
+
+  		<main class="ui-content center">
+  			<h2>On va où?</h2>
+  			<div class="map-container">
+  				<div class="destinationForm">
+  					<div class="tabs" id="tabs1">
+  						<a href="#departure">Départ</a>
+  						<a href="#arrival">Destination</a>
+  					</div>
+  					<form data-role="fieldcontain" action="" method="get" name="direction" id="direction">
+  						<div id="departure">
+  							<input type="text" value="Lieux dit, rue, monuments..." name="origin" id="origin">
+  						</div>
+  					</form>
+  				</div>
+  			</div>
+  			<div id="h-departure">
+  				<h2>Heure de départ:</h2>
+  				<img src="medias/img/h-departure.png">
+  				<span>000</span>
+  			</div>
+  			<section class="transports">
+  				<div data-role="fieldcontain">
+  					<fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain">
+  						<legend>Modes de transports:</legend>
+  						<input type="radio" checked name="radio-choice-1" id="radio-choice-1" value="WALKING" checked="checked" />
+  						<label for="radio-choice-1"><img src="medias/img/walking.png"></label>
+
+  						<input type="radio" name="radio-choice-1" id="radio-choice-2" value="CYCLING"/>
+  						<label for="radio-choice-2"><img src="medias/img/cycling.png"></label>
+
+  						<input type="radio" name="radio-choice-1" id="radio-choice-3" value="TRANSIT"/>
+  						<label for="radio-choice-3"><img src="medias/img/transit.png"></label>
+
+  						<input type="radio" name="radio-choice-1" id="radio-choice-4" value="ROLLER"/>
+  						<label for="radio-choice-4"><img src="medias/img/roller.png"></label>
+  					</fieldset>
+  				</div>
+  			</section>
+  		</main>
+
+  		<footer data-role="footer" class="center">
+  			<a href="#" class="submit">Rechercher</a>
+  		</footer>
+  	</div>
+  </div>
+  <!-- /#go-to-work -->
+
+</body>
+</html>

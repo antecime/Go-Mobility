@@ -1,0 +1,289 @@
+@CHARSET "ISO-8859-1";
+
+
+/* Reset
+* ======================================= */
+
+/* HTML5 display-role reset for older browsers */
+
+html 																	{font-size:62.5%;} 
+body 																	{line-height:2; color:#f3e7d2; font-size:1.2rem;/* =14px */ font-family:'ralewayregular';}
+
+* 																		{text-shadow:none!important; -webkit-font-smoothing:antialiased; -webkit-box-sizing:border-box!important; box-sizing:border-box!important;}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, div 						{display:block;}
+
+body  																	{line-height:1;}
+ol, ul																	{list-style:none; margin:0; padding:0;}
+table 																	{border-collapse:collapse; border-spacing:0;}
+a 																		{text-decoration:none; border:0; text-decoration:none; color:black;}
+img 																	{border:0; -ms-interpolation-mode:bicubic; vertical-align:middle; }
+hr  																	{display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0;}
+
+
+/* Miscellaneous
+* ======================================= */
+
+
+/* image replacement
+* --------------------------------------- */
+
+.ir 																	{text-indent:999; overflow:hidden; font-size:0;}
+
+/* placement
+* --------------------------------------- */
+
+.left																	{float:left}
+.right																	{float:right}
+.center																	{text-align:center}
+.totalCenter															{position:absolute; top:50%; left:50%;}
+.none																	{display:none;}
+/* clear fix
+* --------------------------------------- */
+
+.cf:before,.cf:after 													{content:''; display:table;}
+.cf:after 																{clear:both;}
+.cf  																	{*zoom:1;}/*IE6/7*/
+.clearfix                                                       		{float:none; clear:both;}
+
+
+/* Custom CSS
+* ======================================= */
+
+
+/* Template layout
+* --------------------------------------- */
+
+/* header */
+
+.header 																{height:5rem; margin-bottom:.3rem; padding:1rem 0; background-color:#7dd1eb!important; box-shadow:0px 3px 10px 2px rgba(0,0,0,.15);}
+.header > .inner 														{text-align:center; line-height:2.5rem;}
+.header > .inner > img 													{width:10%; vertical-align:middle;}
+.header > .inner > h1 													{display:inline-block; vertical-align:middle; margin:0; color:#fff; font-size:1.9rem;}
+
+/* panel */
+
+.ui-panel-wrapper 														{width:100%; height:100%; background: #fff url(../medias/img/bg2.jpg) no-repeat center!important; background-size:cover!important;}
+#config																	{-webkit-box-shadow:inset -5px 0 5px rgba(0,0,0,.15); box-shadow:inset -5px 0 5px rgba(0,0,0,.15); }
+#config strong a 														{display:block; margin:.5rem 0; padding:1rem; color:#fff; background-color:#7dd1eb;}
+#config	h3																{color:#868789; text-transform:uppercase;}
+#config nav > ul > li													{text-align:center; border-bottom:2px solid #fff; background-color:#7dd1eb;}
+#config nav > ul > li > a												{display:block; padding:10rem 1rem 1rem;}
+a[href="#config"]														{padding:0; border:none!important; color:#fff!important; font-size:2.7rem!important; background-color:transparent!important; box-shadow:none!important;}
+a[href="#tourist-wrapper"],
+a[href="#sport"],
+a[href="#go-to-work"],
+a[href="#tourist"]:visited,
+a[href="#sport"]:visited,
+a[href="#go-to-work"]:visited											{color:#fff; font-size:1.5em; font-family:'ralewaylight'; background:transparent url(../medias/img/panel-sprite.png) no-repeat 5rem 1rem; background-size:35rem;}
+.config-active															{background-color:#f3e7d2!important;}
+
+
+.ui-content																{/*overflow:hidden;*/ padding:0;}
+
+/* backgrounds */
+
+#portail, #validated 													{background: #fff url(../medias/img/bg1.jpg) no-repeat center; background-size:cover;}
+
+/* #portail */
+
+#connect-box > a														{display:block; width:25rem; overflow:hidden; margin:0 auto; padding:1rem; text-align:center; text-overflow:ellipsis; outline:0; cursor:pointer;}
+#connect-box > a > span													{color:#fff; font-family:'ralewaylight', sans-serif;}
+
+#connect-box > a.fb														{margin-bottom:2rem; border:1px solid transparent; border-bottom:3px solid #2458b1; background-color:#477eda;}
+#connect-box > a.fb > .ico-fb											{display:inline-block; vertical-align:middle; margin-right:1rem;font-size:2rem; color:#fff;}
+
+#connect-box > a.mail 													{background-color:#7dd1eb;}
+#connect-box > a.mail > .ico-mail										{display:inline-block; vertical-align:middle; width:3rem; height:3rem; margin-right:1rem; background:url(../medias/img/logo.png) no-repeat center; background-size:3rem;}
+
+/* #course */
+
+#list-course > li														{width:49.5%; height:11rem; padding:10px; background-color:#7dd1eb;}
+#list-course > li > a													{display:block; color:#fff; font-family:'ralewaylight'; background:none;}
+#list-course > li > a > h2												{font-size:1.2rem;}
+#list-course > li > a > h2 > em											{text-transform:uppercase; font-style:normal; font-size:1.7rem;}
+#list-course > li > a > img												{width:10rem;}
+#list-course > li + li > a > img										{margin-top:1rem;}
+
+#co2 > p																{margin:2rem 0 0 1.5rem; color:#7dd1eb; font-size:1.5rem;}
+#co2 > p + p															{margin-top:.5rem; font-size:2rem;}
+#co2 > p + p + p														{clear:both; font-size:1.5rem;}
+#co2 > .spinner															{width:14rem; height:8rem; background:transparent url(../medias/img/spinner.png) no-repeat center; background-size:12rem;}
+#co2 > .spinner	> span													{margin-left:.5rem; font-size:6rem; letter-spacing:.8rem; font-family:'ralewaylight'; color:#fff;}
+
+#contest 																{z-index:999;/*shitty jqmobile*/ position:fixed; bottom:0; width:100%; padding:.5rem 0; border-top:2px solid #7dd1eb; background-color:#fff;}
+#contest > img															{width:4rem; margin-right:1rem;}
+#contest > p															{display:inline-block; color:#7dd1eb; font-size:1.7rem;}
+
+/* #prop */
+
+#prop .ui-panel-wrapper													{background:none!important;}
+
+#prop input, 
+#prop textarea, 
+#prop .ui-controlgroup-controls 										{display:block; width:100%;}
+#prop textarea 															{height:15rem!important;}
+#prop p 																{text-transform:uppercase; color:868789;}
+
+#prop footer															{position:absolute; bottom:0; width:100%; background-color:#fff;}
+
+/* #validated */
+
+#validated																{position:absolute; width:100%; height:100%;}
+#validated .tooltip														{height:20rem; margin-top:5rem; background:url(../medias/img/tooltip.png) no-repeat center; background-size:22rem;}
+#validated .tooltip > p													{margin:.5rem auto; color:#7dd1eb; font-size:3rem;}
+
+/* #tourist */
+
+#tourist .ui-panel-wrapper												{background:none!important;}
+#tourist .transports													{margin-bottom:1rem; padding:1.5rem 0 2rem; border-bottom:1px solid #868789;}
+#tourist .transports fieldset legend									{margin:0 auto; color:#868789; text-transform:uppercase;}
+#tourist .transports .ui-radio 											{width:25%; border-radius:0;}
+#tourist .transports .ui-radio label 									{display:block; height:6rem; border-color:#fff; background-color:#7dd1eb;}
+#tourist .transports .ui-radio label.ui-btn-active 						{background-color:#f3e7d2;}
+#tourist .transports .ui-radio label > img 								{width:4rem; margin-top:.5rem;}
+
+#tourist .kind															{padding-bottom:2rem; border-bottom:1px solid #868789;}
+#tourist .kind fieldset legend											{margin:0 auto; color:#868789; text-transform:uppercase;}
+#tourist .kind .ui-radio												{width:50%; border-radius:0;}
+#tourist .kind .ui-radio label											{text-align:center; color:#fff; font-family:'ralewaylight'; border-color:#fff; background-color:#7dd1eb;}
+#tourist .kind .ui-radio label.ui-btn-active							{background-color:#f3e7d2;}
+#tourist .kind .ui-radio label > img									{width:7.5rem;}
+
+#tourist .details														{margin-top:1.5rem; border-bottom:1px solid #868789;}
+#tourist .details legend												{display:block; margin:0 auto; text-transform:uppercase; color:#868789;}
+#tourist .details .ui-slider .ui-slider-input							{height:2.8rem; padding:0; border:none; color:#868789; background-color:transparent; box-shadow:none;}
+#tourist .details .ui-slider .ui-slider-track							{height:.4rem; margin-top:.8rem; border:none; background-color:#f3e7d2;}
+#tourist .details .ui-slider .ui-slider-bg								{background-color:#7dd1eb;}
+#tourist .details .ui-slider .ui-slider-handle							{border-radius:50%; border:none; background-color:#7dd1eb;}
+
+#tourist .annex															{margin-bottom:1rem; padding:1.5rem 0 2rem; border-bottom:1px solid #868789;}
+#tourist .annex	.ui-controlgroup-controls 								{width:100%;}
+#tourist .annex fieldset legend											{margin:0 auto; color:#868789; text-transform:uppercase;}
+#tourist .annex .ui-radio 												{border-radius:0;}
+#tourist .annex .ui-radio label 										{display:block; height:4rem; text-align:center; color:#fff; border-color:#fff; background-color:#7dd1eb;}
+#tourist .annex .ui-radio label.ui-btn-active 							{background-color:#f3e7d2;}
+
+#tourist .annex .money													{margin-top:1.5rem;}
+
+#tourist .annex .diff .ui-radio											{width:33%;}
+#tourist .annex .money .ui-radio										{width:50%;}
+
+#tourist footer															{padding:1rem; background-color:#fff;}
+#tourist .submit														{width:25rem; color:#fff; font-size:1.9rem; font-family:'ralewaylight'; background-color:#7dd1eb; border-radius:0;}
+
+/* #tourist-exp */
+
+#tourist-exp .ui-panel-wrapper											{background:none!important;}
+#tourist-exp main ul > li 												{clear:both; border-bottom:1px solid #868789;}
+#tourist-exp main ul > li > div											{float:left; width:20%; padding:1rem;}
+
+#tourist-exp main ul > li .number										{padding-top:3rem;}
+#tourist-exp main ul > li .number > span								{padding:0.5rem 1rem 0.5rem 1rem; font-family:'ralewayregular'; color:#fff; background-color:#7dd1eb; border-radius:50% 50% 50% 50%;}
+
+#tourist-exp main ul > li .co2,
+#tourist-exp main ul > li .km,
+#tourist-exp main ul > li .min 											{padding-top:2rem;}
+
+#tourist-exp main ul > li .co2 span,
+#tourist-exp main ul > li .co2 p										{margin:0; color:#79b323; font-family:'ralewayregular'; }
+
+#tourist-exp main ul > li .km p,
+#tourist-exp main ul > li .km span										{margin:0; color:#868789; font-family:'ralewayregular'; }
+
+#tourist-exp main ul > li .min span,
+#tourist-exp main ul > li .min	p										{margin:0; color:#868789; font-family:'ralewayregular'; }
+
+#tourist-exp main ul > li .eval > p										{margin:0; color:#868789; font-family:'ralewayregular'; }
+#tourist-exp main ul > li .eval > img									{width:5rem;}
+
+#tourist-exp main ul > li .co2 span,
+#tourist-exp main ul > li .km span,
+#tourist-exp main ul > li .min span 									{font-size:2.2rem;}
+
+/* #sport */
+
+#sport .ui-panel-wrapper												{background:none!important;}
+#sport main > img														{width:18rem;}
+#map-container															{margin-top:1rem;}
+#map																	{height:18rem;}
+#direction																{padding:.2em .8em; background-color:#7dd1eb;}
+#destinationForm .tabs													{text-align:left;}
+#destinationForm .tabs a 												{display:inline-block; vertical-align:bottom; text-align:center; width:12rem; height:25px; line-height:25px; margin-right:.1rem; padding:0 10px; font-size:1.5rem; color:#fff; background:#f3e7d2; -webkit-border-radius:.5rem .5rem 0 0; border-radius:.5rem .5rem 0 0;}
+#destinationForm .tabs a:hover, 
+.tabs a.active,
+#destinationForm .tabs a.ui-link.active 								{background-color:#7dd1eb; color:#fff;}
+#destinationForm .calcRoute												{color:#fff; background-color:#f3e7d2;}
+#destinationForm .calcRoute:hover,
+#destinationForm .calcRoute:active										{background-color:#7dd1eb;}
+#panel b																{color:#858688;}
+#panel .ui-select > .ui-btn												{background-color:#7dd1eb;}
+
+#sport footer															{height:6rem; background-color:#7dd1eb;}
+#sport footer ul														{display:table; width:100%;}
+#sport footer li														{display:table-cell; width:32%;}
+#sport footer li.chill img												{width:6rem;}
+#sport footer li.photo img												{width:4rem;}
+#sport footer li.finished > a											{color:#fff;}
+#sport footer li > a													{display:block; height:5rem; text-align:center; padding-top:1rem;}
+
+/* #sport-effort */
+
+#sport-effort .ui-panel-wrapper											{background:none!important; background-color:#fff;}
+#sport-effort															{padding-top:0!important;}
+#sport-effort h2														{color:#868789;}
+#sport-effort .effort													{margin-bottom:2rem; padding-bottom:2rem; border-bottom:2px solid #b0b2b3;}
+#sport-effort .effort > li												{float:left; width:50%; height:8rem; padding:1rem 0 0 1.5rem; border:1px solid #868789;}
+#sport-effort .effort > li > img										{float:left; margin-right:1rem;}
+#sport-effort .effort > li > p											{float:left; color:#7dd1eb;}
+#time > img																{}
+#time > p																{margin-top:2.4rem;}
+#cal > img																{margin-top:.5rem;}
+#cal > p																{margin-top:2.4rem;}
+#km > img																{margin-top:1.5rem;}
+#km > p																	{margin-top:2.4rem;}
+#co2-effort > img														{margin-top:1.8rem;}
+#co2-effort > p															{margin-top:2.4rem;}
+#sport-effort footer													{padding:1rem; background-color:#fff;}
+#share-course															{padding:; font-size:1.9rem; font-family:'ralewaylight'; color:#fff; background-color:#7dd1eb; border-radius:0;}
+
+#sport-effort															{margin-bottom:1rem; padding:1.5rem 0 0;}
+#sport-effort	.ui-controlgroup-controls 								{width:100%;}
+#sport-effort fieldset legend											{margin:0 auto; color:#868789; text-transform:uppercase;}
+#sport-effort .ui-radio 												{border-radius:0;}
+#sport-effort .ui-radio label 											{display:block; height:4rem; text-align:center; color:#fff; border-color:#fff; background-color:#7dd1eb;}
+#sport-effort .ui-radio label.ui-btn-active 							{background-color:#f3e7d2;}
+
+#sport-effort .money													{margin-top:1.5rem;}
+
+#sport-effort .diff .ui-radio											{width:33%;}
+#sport-effort .money .ui-radio											{width:50%;}
+
+/* #go-to-work */
+
+#go-to-work	.ui-panel-wrapper											{background:none!important;}
+#go-to-work h2															{text-transform:uppercase; color:#868789;}
+
+.destinationForm .tabs													{text-align:left;}
+.destinationForm .tabs a 												{display:inline-block; vertical-align:bottom; text-align:center; width:12rem; height:25px; line-height:25px; margin-right:.1rem; padding:0 10px; font-size:1.5rem; color:#fff; background:#f3e7d2; -webkit-border-radius:.5rem .5rem 0 0; border-radius:.5rem .5rem 0 0;}
+.destinationForm .tabs a:hover, 
+.tabs a.active,
+.destinationForm .tabs a.ui-link.active 								{background-color:#7dd1eb; color:#fff;}
+.destinationForm .calcRoute												{color:#fff; background-color:#f3e7d2;}
+.destinationForm .calcRoute:hover,
+.destinationForm .calcRoute:active										{background-color:#7dd1eb;}
+
+#h-departure															{position:relative;}
+#h-departure img														{display:block; width:30rem; margin:0 auto;}
+#h-departure span														{position:absolute; top:6.5rem; left:9rem; color:#7dd1eb; font-size:4rem; letter-spacing:2.8rem;}
+
+#go-to-work .transports													{margin-bottom:1rem; padding:1.5rem 0 2rem; border-bottom:1px solid #868789;}
+#go-to-work .transports fieldset legend									{margin:0 auto; color:#868789; text-transform:uppercase;}
+#go-to-work .transports .ui-radio 										{width:25%; border-radius:0;}
+#go-to-work .transports .ui-radio label 								{display:block; height:6rem; border-color:#fff; background-color:#7dd1eb;}
+#go-to-work .transports .ui-radio label.ui-btn-active 					{background-color:#f3e7d2;}
+#go-to-work .transports .ui-radio label > img 							{width:4rem; margin-top:.5rem;}
+
+#go-to-work footer														{padding:1rem; background-color:#fff;}
+#go-to-work .submit														{width:25rem; color:#fff; font-size:1.9rem; font-family:'ralewaylight'; background-color:#7dd1eb; border-radius:0;}

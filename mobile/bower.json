@@ -1,0 +1,19 @@
+{
+  "name": "personnages",
+  "version": "0.0.0",
+  "authors": [
+    "jmpp <jmclery@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-mobile-bower": "~1.4.2"
+  }
+}

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*Admin style*/
+/*Déclaration des couleurs*/
+.side {
+  background-color: #fafafa; }
+
+h3.subheader {
+  font-size: 1.25rem; }
+
+body {
+  background-image: url("../images/renard-transparent.png");
+  background-position: left top; }
+
+/* Dashboard
+ * --------------------------------------- */
+#user {
+  display: inline-block;
+  float: right;
+  padding: 5px 10px;
+  color: white; }
+  #user span {
+    color: #008cba; }
+
+.totalInfo span {
+  position: absolute;
+  top: 113px;
+  right: 165px;
+  font-size: 76px;
+  color: white; }
+  .totalInfo span#totalCom {
+    right: 148px; }
+  .totalInfo span#ecoActorEmail {
+    font-size: 18px;
+    right: 113px; }
+
+.supporticons p {
+  padding-top: 10px; }
+  .supporticons p#eco {
+    padding-left: 80px; }
+  .supporticons p#com {
+    padding-left: 40px; }
+  .supporticons p#mel {
+    padding-left: 50px; }
+
+/* Button
+ * --------------------------------------- */
+.green {
+  background-color: green !important; }
+
+.grey {
+  background-color: #8c8b8b !important; }
+
+/* Form Errors
+ * --------------------------------------- */
+.formErrors {
+  background-color: #f04124; }
+  .formErrors ul {
+    margin-top: 1.1rem;
+    list-style: none; }
+    .formErrors ul li {
+      color: #FFFFFF;
+      font-style: italic; }
+
+/* BreadCrumbs
+ * --------------------------------------- */
+.breadcrumbs {
+  border: none;
+  margin-right: 0; }

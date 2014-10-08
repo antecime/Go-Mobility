@@ -1,0 +1,20 @@
+[
+	{
+		"name"        : "Legolas",
+		"img"         : "http://cf.imados.fr/1/stars-people/legolas/photo/thumbnail/4875283487/965489cc9/legolas-default-tns2.jpg",
+		"className"   : "Elf",
+		"description" : "Legolas lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis nesciunt, mollitia at sed. Nemo earum tenetur itaque temporibus asperiores, porro dolor, beatae iste, incidunt officia ducimus doloribus odit minus."
+	},
+	{
+		"name"        : "Aragorn",
+		"img"         : "http://www3.images.coolspotters.com/photos/22834/aragorn-medium.jpg",
+		"className"   : "Human",
+		"description" : "Aragorn lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis nesciunt, mollitia at sed. Nemo earum tenetur itaque temporibus asperiores, porro dolor, beatae iste, incidunt officia ducimus doloribus odit minus."
+	},
+	{
+		"name"        : "Golug",
+		"img"         : "http://images6.fanpop.com/image/photos/36800000/Orc-lotr-orcs-and-uruk-hai-36837031-75-75.jpg",
+		"className"   : "Orc",
+		"description" : "Golug lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis nesciunt, mollitia at sed. Nemo earum tenetur itaque temporibus asperiores, porro dolor, beatae iste, incidunt officia ducimus doloribus odit minus."
+	}
+]
